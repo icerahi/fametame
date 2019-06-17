@@ -1,0 +1,1 @@
+web: gunicorn fametame.wsgi --log-file -
