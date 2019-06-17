@@ -1,7 +1,7 @@
-
+import django_heroku
 
 import os
-import django_heroku
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -10,12 +10,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&5tu*(ea4sv@3p*f$um+!1%r-bx+^edo6%&0u32*%1@i)@*)0_'
+SECRET_KEY = 'mmqgabrlag0=of_q*n$ek_q_wk5p@3)y_3jizwt!d$xyc#)=gv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -27,24 +27,60 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
+
+    #my app
+    'articles',
+    'stickypics',
+    'photos',
+    'accounts',
+    'api',
+
+  
+    'rest_framework',
+ 
+
+# social_authentication
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    
+    'allauth.socialaccount.providers.google',
+    'django.contrib.sites',
 ]
 
+SITE_ID=1
+
+AUTHENTICATION_BACKENDS=(
+
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+
+)
+
+ACCOUNT_EMAIL_REQUIRED=True
+
 MIDDLEWARE = [
+    #corsheader_middleware
+   
+    'django.middleware.common.CommonMiddleware',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
+   ]
 
 ROOT_URLCONF = 'fametame.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -52,6 +88,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -59,7 +97,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'fametame.wsgi.application'
 
-
+LOGIN_URL='/login'
+LOGIN_REDIRECT_URL='/photo'
+LOGOUT_REDIRECT_URL=LOGIN_URL
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -95,7 +135,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Dhaka'
 
 USE_I18N = True
 
@@ -108,11 +148,34 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT=os.path.join(BASE_DIR,'static-root')
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]
+STATIC_ROOT=os.path.join(BASE_DIR,'static-root')
+
 MEDIA_URL='/media/'
+
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
+
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'rootcodeerror@gmail.com'
+SERVER_EMAIL = 'rootcodeerror@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'rootcodeerror@gmail.com'
+EMAIL_HOST_PASSWORD = 'rahiriya'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
+ 
+## activate django heroku
 django_heroku.settings(locals())

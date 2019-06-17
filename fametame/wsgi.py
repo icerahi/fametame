@@ -1,5 +1,5 @@
 """
-WSGI config for fametame project.
+WSGI config for fame project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
