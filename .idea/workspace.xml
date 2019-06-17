@@ -2,9 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14af07b7-0f49-4fc9-904b-3762fa65903f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fametame/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fametame/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fametame/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fametame/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fametame/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/fametame/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/accounts/profile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/articles/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/articles/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/articles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/auth/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/auth/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/article.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/article_add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/facebook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/fame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/favourite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/group.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/icons8-love-48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/options.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/pinterest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/share-link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/share.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/student.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/twitter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/unfavourite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/unlike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photos/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photos/buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photos/infinite.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photos/jquery.waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photos/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photos/js/jquery.sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photos/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/photos/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/rahi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/rahi1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/stikipy/css/pins.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/stikipy/js/drag-and-drop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/stikipy/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/stikipy/js/infinite-scroll.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +66,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fametame/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+            <state relative-caret-position="139">
+              <caret line="150" column="1" lean-forward="true" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -44,13 +93,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/fametame/urls.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/fametame/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="465" />
-    <option name="y" value="42" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="358" />
+    <option name="y" value="132" />
     <option name="width" value="901" />
     <option name="height" value="726" />
   </component>
@@ -72,7 +122,7 @@
             <path>
               <item name="fametame" type="b2602c69:ProjectViewProjectNode" />
               <item name="fametame" type="462c0819:PsiDirectoryNode" />
-              <item name="fametame" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -110,10 +160,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="26" width="1368" height="743" extended-state="6" />
+    <frame x="358" y="132" width="901" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16232316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38127854" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -125,7 +175,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3198052" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32888147" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -141,10 +191,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fametame/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state relative-caret-position="139">
+          <caret line="150" column="1" lean-forward="true" selection-start-line="150" selection-start-column="1" selection-end-line="150" selection-end-column="1" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
