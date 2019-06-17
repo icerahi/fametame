@@ -2,6 +2,7 @@ import allauth
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.http import HttpResponse
 from django.shortcuts import redirect
 
 from django.urls import path, include, reverse, reverse_lazy
@@ -12,8 +13,12 @@ from fametame.views import index, ResetPasswordRequestView, PasswordResetConfirm
 from .views import SearchView
 from django.contrib.auth import views as auth_views
 
+def rahi(request):
+    return HttpResponse(request,'google387c46547d461907.html')
+
 urlpatterns = [
     path('',index,name='index'),
+    path('rahi/',rahi),
     #authentication
     path('', include('django.contrib.auth.urls'),name='login'),
     path('signup/',signup,name='signup'),

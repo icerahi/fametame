@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14af07b7-0f49-4fc9-904b-3762fa65903f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fametame/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fametame/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fametame/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fametame/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +12,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fametame/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="342">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -25,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fametame/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="2484">
               <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
@@ -34,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" />
+              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -60,16 +62,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fametame/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/fametame/settings.py" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/fametame/urls.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="358" />
-    <option name="y" value="132" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-88" />
+    <option name="y" value="72" />
     <option name="width" value="901" />
     <option name="height" value="726" />
   </component>
@@ -124,10 +126,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="358" y="132" width="901" height="726" extended-state="0" />
+    <frame x="-1" y="26" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38127854" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24869695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -148,13 +150,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fametame/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -162,9 +157,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fametame/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="2484">
           <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -172,10 +174,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/fametame/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="342">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
